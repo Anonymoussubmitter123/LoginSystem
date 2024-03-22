@@ -1,0 +1,107 @@
+登录系统架构：
+1、用户界面：负责与管理员交互，展示界面、接收输入，并将用户请求传递给业务逻辑层。
+
+2、业务逻辑层：负责处理业务逻辑，包括用户管理、权限管理、数据管理、系统设置等功能。它接收用户界面传递过来的请求，调用数据访问层进行数据操作，并根据需要进行逻辑处理和业务规则验证。
+
+3、数据访问层：负责与数据库进行交互，执行数据库操作，包括增删改查等操作。它接收业务逻辑层传递过来的请求，执行相应的数据库操作，并将结果返回给业务逻辑层。
+
+4、数据库：存储系统的数据，包括用户信息、权限信息、业务数据等。管理员可以通过业务逻辑层进行对数据库的操作。
+
+一个登录注册系统的架构通常包含以下几个核心类：
+1.User：表示用户的实体类，包含用户的基本信息，如用户名、密码等。(completed)
+
+2.UserDAO：数据访问对象类，负责与数据库进行交互，包括用户的增删改查操作。(completed)
+
+3.AuthenticationService：认证服务类，负责处理用户登录认证的逻辑，包括验证用户身份、生成和验证令牌等。(completed)
+
+4.RegistrationService：注册服务类，负责处理用户注册的逻辑，包括验证注册信息的有效性、添加用户到数据库等。(completed)
+
+5.PasswordHelper：密码辅助类，负责密码加密、解密等操作，以确保用户密码的安全性。(completed)
+
+6.UserInterface：用户界面类，负责与用户交互，包括显示登录界面、注册界面，接收用户输入等。(completed)
+
+7.ErrorHandler：错误处理类，负责处理系统中可能出现的异常情况，提供错误提示信息给用户或记录日志等。(completed)
+
+8.SessionManager：会话管理类，负责管理用户的登录状态和会话信息，包括创建、销毁会话等操作。
+
+9.Validator：验证器类，负责验证用户输入的数据是否合法，如用户名是否已存在、密码是否符合规范等。(completed)
+
+10.EmailService：邮件服务类，负责发送验证邮件、密码重置邮件等与用户相关的邮件通知。(not necessary)
+
+11.Admin 类： 表示系统中的管理员角色，包括管理员的属性和方法，比如用户名、密码等。
+
+12.UserManager 类： 用户管理模块的业务逻辑类，负责处理用户管理相关的业务逻辑，包括添加用户、编辑用户、删除用户、查询用户等操作。(completed)
+
+13.PermissionManager 类： 权限管理模块的业务逻辑类，负责处理权限管理相关的业务逻辑，包括角色管理、权限设置、用户角色分配等操作。(completed)
+
+14.DataManager 类： 数据管理模块的业务逻辑类，负责处理数据管理相关的业务逻辑，包括数据查看、数据导入导出、数据统计分析等操作。（not necessary）
+
+15.SystemSettingsManager 类： 系统设置模块的业务逻辑类，负责处理系统设置相关的业务逻辑，包括系统参数设置、日志管理、系统备份恢复等操作。（not necessary）
+
+以上是一个基本的登录注册系统的核心类，具体的架构还可以根据需求进行扩展和定制。例如，如果需要支持第三方登录，则可能需要额外的类来集成第三方登录服务；如果需要支持多种加密算法，则可能需要进一步拆分密码辅助类。
+这些类中具体的方法可以根据系统的需求和设计进行定义和实现。以下是一些可能的方法示例：
+1.User 类：
+- getUserInfo()：获取用户信息。
+- setUserInfo()：设置用户信息。
+- validateCredentials()：验证用户的用户名和密码是否匹配。
+2.UserDAO 类：
+- addUser()：添加新用户到数据库。
+- removeUser()：从数据库中删除用户。
+- updateUser()：更新数据库中的用户信息。
+- getUserById()：根据用户ID从数据库中获取用户信息。
+3.AuthenticationService 类：
+- authenticateUser()：验证用户的登录凭据。
+- generateToken()：生成用户的登录令牌。
+- validateToken()：验证用户的登录令牌是否有效。
+4.RegistrationService 类：
+- registerUser()：注册新用户。
+- validateRegistrationData()：验证注册信息的有效性。
+5.PasswordHelper 类：
+- encryptPassword()：加密用户的密码。
+- decryptPassword()：解密用户的密码。
+6.UserInterface 类：
+- displayLoginForm()：显示登录界面。
+- displayRegistrationForm()：显示注册界面。
+- getUserInput()：获取用户的输入。
+7.ErrorHandler 类：
+- handleError()：处理系统中出现的错误。
+- logError()：记录错误信息到日志文件。
+8.SessionManager 类：
+- createSession()：创建用户的会话。
+- destroySession()：销毁用户的会话。
+- validateSession()：验证用户的会话是否有效。
+9.Validator 类：
+- validateUsername()：验证用户名是否合法。
+- validatePassword()：验证密码是否符合规范。
+10.EmailService 类：
+- sendVerificationEmail()：发送验证邮件。
+- sendPasswordResetEmail()：发送密码重置邮件。
+11.Admin 类：
+- GetUsername(): string: 获取管理员用户名。
+- SetUsername(username: string): 设置管理员用户名。
+- GetPassword(): string: 获取管理员密码。
+- SetPassword(password: string): 设置管理员密码。
+12.UserManager 类：
+- AddUser(user: User): 添加用户到系统中。
+- EditUser(user: User): 编辑用户信息。
+- DeleteUser(userId: string): 删除指定 ID 的用户。
+- GetUser(userId: string): User: 获取指定 ID 的用户信息。
+- GetAllUsers(): List<User>: 获取系统中所有用户的列表。
+13.PermissionManager 类：
+- AddRole(roleName: string): 添加角色到系统中。
+- EditRole(roleName: string): 编辑角色信息。
+- DeleteRole(roleName: string): 删除指定名称的角色。
+- GetRolePermissions(roleName: string): List<Permission>: 获取指定角色的权限列表。
+- GrantPermission(roleName: string, permission: Permission): 授予指定角色的权限。
+- RevokePermission(roleName: string, permission: Permission): 撤销指定角色的权限。
+14.DataManager 类：
+- ViewData(dataId: string): 查看指定 ID 的数据信息。
+- ImportData(data: Data): 导入数据到系统中。
+- ExportData(dataId: string): 导出指定 ID 的数据。
+- AnalyzeData(dataId: string): 分析指定 ID 的数据信息。
+15.SystemSettingsManager 类：
+- SetSystemParameter(parameterName: string, value: string): 设置系统参数。
+- GetSystemParameter(parameterName: string): string: 获取系统参数值。
+- ManageLogs(logType: LogType, action: LogAction): 管理日志，如清理、备份、查看等操作。
+- BackupSystem(): 备份系统数据。
+- RestoreSystemBackup(backupId: string): 恢复系统数据备份。

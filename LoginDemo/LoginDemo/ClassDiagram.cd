@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LoginDemo.AuthenticationService">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAAAAAAAACBAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AuthenticationService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.ErrorHandler" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEIAAAAAAAAAAAAAAAgAAACAAAAAgAAAAAECAA=</HashCode>
+      <FileName>ErrorHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Index" Collapsed="true">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAIEQgACAAAAgAAACAAAACAAAKAAAAAEAAAAFAIAA=</HashCode>
+      <FileName>Index.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserInterface" />
+      <Property Name="AuthenticationService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.IndexException" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IndexException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.InformationManagementForm" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAKAIAAACAAABgMgQCQBAADAAAAAAAgAQBAAACAAAA=</HashCode>
+      <FileName>InformationManagementForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserInterface" />
+      <Property Name="AuthenticationService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.InformationManagementFormException" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InformationManagementFormException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.LoginException" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoginException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.LoginForm" Collapsed="true">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAKBAAAACAAABgEAACAFAACIEAAAAAAAAAAAAAAABI=</HashCode>
+      <FileName>LoginForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserInterface" />
+      <Property Name="AuthenticationService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.LoginHistoryManager" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAEAAAAAACAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoginHistoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.PassWordHelper" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PassWordHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Program" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.RegistrationException" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegistrationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.RegistrationForm" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAAAAECAAABgAQACABAACAAAAAAAAAQBAQAAAAAA=</HashCode>
+      <FileName>RegistrationForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserInterface" />
+      <Property Name="AuthenticationService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.User" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.UserDAO">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIAAAEABAgEAAAQAAAAAAAAAAQgACAAAAAAAAA=</HashCode>
+      <FileName>UserDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.UserInterface">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAAAAAAAACAAAAAAAAAAAABAQAQAAEAAAAQAA=</HashCode>
+      <FileName>UserInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.UserManager">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMAAAQAgAAAAIAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>UserManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserDAO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginDemo.Validator" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Properties.PermissionManager" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAgAAAAAAEAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Properties\PermissionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAIABEAAAAQAAAAAAAAAAgAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Properties.SessionManager" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAICAAAAAAAAAAAAAAAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>Properties\SessionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginDemo.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAABAAIAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
